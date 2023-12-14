@@ -1,5 +1,4 @@
-﻿using Bookify.Domain.Bookings;
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 
 namespace Bookify.Domain.Abstractions;
 

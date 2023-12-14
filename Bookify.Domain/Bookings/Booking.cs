@@ -105,7 +105,7 @@ public sealed class Booking : Entity
         Status = BookingStatus.Rejected;
         RejectedOnUtc = utcNow;
 
-        RaiseDomainEvent(new BookingRejectedDomainEvent(Id));
+        RaiseDomainEvent(new BookingReservedDomainEvent(Id));
 
         return Result.Success();
     }

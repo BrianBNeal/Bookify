@@ -1,4 +1,4 @@
-﻿namespace Bookify.Domain.Bookings;
+﻿namespace Bookify.Domain.Abstractions;
 
 public record Error(string Code, string Name)
 {

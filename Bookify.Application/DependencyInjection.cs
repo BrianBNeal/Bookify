@@ -12,7 +12,7 @@ public static class DependencyInjection
             configuration.RegisterServicesFromAssembly(typeof(DependencyInjection).Assembly);
         });
 
-        services.AddTransient<IPricingService, PricingService>();
+        services.AddTransient<PricingService>();
         
         return services;
     }
