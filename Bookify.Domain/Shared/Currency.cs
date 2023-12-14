@@ -1,6 +1,6 @@
-﻿namespace Bookify.Domain.Apartments;
+﻿namespace Bookify.Domain.Shared;
 
-public record Currency
+public sealed record Currency
 {
     internal static Currency None => new(string.Empty);
     public static Currency Usd => new("USD");
