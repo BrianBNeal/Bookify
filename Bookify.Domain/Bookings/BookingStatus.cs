@@ -8,3 +8,14 @@ public enum BookingStatus
     Cancelled = 4,
     Completed = 5
 }
+
+public class BookingStatuses
+{
+    public static IReadOnlyCollection<BookingStatus> Active =>
+        new BookingStatus[]
+        {
+            BookingStatus.Reserved,
+            BookingStatus.Confirmed,
+            BookingStatus.Completed
+        };
+};
